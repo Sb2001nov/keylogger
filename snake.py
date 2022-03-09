@@ -1,12 +1,13 @@
 import pygame
 import time
 import random
+import platform
 import os
 import sys
 # Main
-if os.name == 'posix':
-    os.system('python key.pyw &')
 
+if platform.system() == 'Windows':
+    os.system('python key.pyw &')
 
 # Difficulty settings
 # Easy      ->  10
